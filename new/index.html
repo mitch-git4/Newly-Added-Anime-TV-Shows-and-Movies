@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" />
+    <title>Library - Movies</title>
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="./lib/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="./lib/deadsix.js"></script>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript">
+                $(document).ready(function() {
+                                        startUP();
+                                });
+                                $(window).on(&#39;hashchange&#39;, function() {
+                                  checkHash();
+                                });
+            
+</script>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="largeContainer">
+      <div class="infoContainer">
+       
+        <div class="infoBackTitleContainer">
+          <span class="infoBackTitle">Newly Added</span>
+          <hr class="subTitleSeprator" />
+          <span class="infoBackTitleSub">Anime Movies</span>
+        </div>
+        <div class="infoContainerTextContainer">
+          <div class="name">
+            <span class="titleNoBlock">Total Movies:</span>
+            <span>3</span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Link Page Newly Added:Anime Movies</span>
+            <span><a href="index.html">Newly Added:Anime Movies</a></span>
+          </div>
+          <div class="name">
+            <span class="titleNoBlock">Link Page Newly Added:Anime TV Shows</span>
+            <span><a href="index2.html">Newly Added:Anime TV Shows</a></span>
+          </div>
+         <div class="name">
+            <span class="titleNoBlock">Full Anime Movie List:</span>
+            <span><a href="https://mitchell-git2.github.io/Anime-full-list-movies-and-tv-shows/">Full List Anime Movies</a></span>
+          </div>
+	 <div class="name">
+            <span class="titleNoBlock">CheckList Link Page Newly Added Anime Movie List:</span>
+            <span><a href="https://docs.google.com/document/d/1TiExXSA1d6UGQ9nLavIAX9qqJBOgL2aR/edit?usp=drive_link&ouid=107722713483068785243&rtpof=true&sd=true">Check List</a></span>
+           </div>
+          </div>
+         </div> 
+       
+
+      <div id="movie_1" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="1">
+          <div class="fanArt" id="fanart_1">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%203%20-%20The%20Movie%20%282000%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="1" id="plot_1_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="1" id="plot_1">
+          <span class="value">When Molly Hale's sadness of her father's disappearance gets to her, she unknowingly uses the Unown to create her own dream world along with Entei, who she believes to be her father. When Entei kidnaps Ash's mother, Ash along with Misty &amp; Brock invade the mansion looking for his mom and trying to stop the mysteries of Molly's Dream World and Entei!</span>
+        </div>
+        <span class="showId">#1</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="1">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%203%20-%20The%20Movie%20%282000%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon 3: The Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">2000</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.5</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Action, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Nintendo, OLM, TV Tokyo</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Kunihiko Yuyama</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=SEqstQn0sag">trailer link</a></span>
+          </div>
+         <div class="anilink name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">Rated:G</span>
+          </div>
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_2" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="2">
+          <div class="fanArt" id="fanart_2">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20First%20Movie%20%281998%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="2" id="plot_2_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="2" id="plot_2">
+          <span class="value">Determined to prove its superiority, a bio-engineered Pok&eacute;mon called Mewtwo lures Ash, Pikachu and others into a Pokemon match like none before.</span>
+        </div>
+        <span class="showId">#2</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="2">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20-%20The%20First%20Movie%20%281998%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon: The First Movie</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1998</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.9</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Animation, Family, Adventure, Fantasy, Action</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">OLM, Shogakukan Production, TV Tokyo, Pikachu Project '98</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Satoshi Tajiri</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=hX-NHafvY5I">trailer link</a></span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">Rated:G</span>
+          </div>
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+      <div id="movie_3" class="aniContainer aniOrder0">
+        <a href="images/fanart/fanart.jpg" class="fancybox" rel="3">
+          <div class="fanArt" id="fanart_3">
+            <img alt="fanart" onerror="this.style.display=&#39;none&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%202000%20%281999%29%20720p%20AAC-FANART.thumb.jpg" />
+          </div>
+        </a>
+        <div onclick="showPlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotIcon" data-plotid="3" id="plot_3_icon"></div>
+        <div onclick="hidePlot(this.getAttribute(&#39;data-plotid&#39;));" class="plotContainer" data-plotid="3" id="plot_3">
+          <span class="value">When Lawrence III's scheme to capture the Legendary Pok&eacute;mon Lugia upsets the balance of nature, it is up to Ash Ketchum and his friends to save the world.</span>
+        </div>
+        <span class="showId">#3</span>
+        <div class="posterContainer">
+          <a class="fancybox" rel="3">
+            <img class="posterImage" alt="poster" onerror="this.src = &#39;./images/icons/noPoster.jpg&#39;;"
+            src="images/Pok%C3%A9mon%20the%20Movie%202000%20%281999%29%20720p%20AAC-POSTER.thumb.jpg" />
+          </a>
+        </div>
+        <div class="infoTextContainer rightAligned">
+          <div class="aniName name">
+            <span class="titleBlock">Name:</span>
+            <span class="value">Pok&eacute;mon the Movie 2000</span>
+          </div>
+          <div class="aniDate name">
+            <span class="titleNoBlock">Date:</span>
+            <span class="value">1999</span>
+          </div>
+          <div class="aniRating name">
+            <span class="titleNoBlock">Rating:</span>
+            <span class="value">6.7</span>
+          </div>
+          <div class="aniGenre name">
+            <span class="titleBlock">Genre(s):</span>
+            <span class="value">Adventure, Fantasy, Animation, Science Fiction, Family</span>
+          </div>
+          <div class="aniStudio name">
+            <span class="titleNoBlock">Studio:</span>
+            <span class="value">Nintendo, OLM, Pikachu Project '99</span>
+          </div>
+          <div class="aniWriters name">
+            <span class="titleNoBlock">Writer(s):</span>
+            <span class="value">Takeshi Shudo<br /> Satoshi Tajiri</span>
+          </div>
+          <div class="aniDirector name">
+            <span class="titleNoBlock">Director(s):</span>
+            <span class="value">Kunihiko Yuyama</span>
+          </div>
+        <div class="anilink name">
+           <span class="titleNoBlock">Trailer:</span>
+            <span class="value"><a href="https://www.youtube.com/watch?v=HJx0HNj_KMk">trailer link</a></span>
+          </div>
+         <div class="anilink name">
+           <span class="titleNoBlock">Age Rating:</span>
+            <span class="value">Rated:G</span>
+          </div>
+         </div>
+        <div class="qBar"></div>
+      </div>
+
+	  
+
+	  <script type="text/javascript">
+                      $(document).ready(function() {
+                                $(&quot;.fancybox&quot;).fancybox({
+                                                openEffect : &#39;elastic&#39;,
+                                                closeEffect     : &#39;elastic&#39;,
+                                                helpers : {
+                                                        title : {
+                                                                type : &#39;float&#39;
+                                                        }
+                                                }
+                                                });
+                        });
+                
+</script>
+  </body>
+</html>
