@@ -4,7 +4,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="shortcut icon" href="./images/icons/favicon.ico" />
-    <title>Library - Movies</title>
+    <title>Newly Added Anime - Movies</title>
     <script type="text/javascript" src="./lib/jquery.js"></script>
     <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="./lib/jquery.lazyload.min.js"></script>
@@ -27,7 +27,13 @@
     <div id="overlay"></div>
     <div id="largeContainer">
       <div class="infoContainer">
-       
+         <div id="searchContainer">
+        <input type="text" autocomplete="off" onfocus="this.value='';"
+        onblur="if(this.value==''){this.value='Search...'};"
+        onkeyup="searchOnPage(this.value.toLowerCase());" value="" name="search"
+        id="search_box" />
+        <input type="submit" id="search_button" value="Search" />
+        <div id="search_result"></div></div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Newly Added</span>
           <hr class="subTitleSeprator" />
