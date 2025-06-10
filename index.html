@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="shortcut icon" href="./images/icons/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="images\favicon\favicon.ico">.
     <title>Newly Added Anime - Movies</title>
     <script type="text/javascript" src="./lib/jquery.js"></script>
     <link rel="stylesheet" href="./lib/jquery.fancybox.css" type="text/css" media="screen" />
@@ -26,6 +26,17 @@
   <body>
     <div id="overlay"></div>
     <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="index.html"target="_blank">Newly Added:Anime Movies</a></li>
+       <li><a href="index2.html"target="_blank">Newly Added:Anime TV Shows</a></li>
+       <li><a href="https://mitchell-git2.github.io/Anime-full-list-movies-and-tv-shows/"target="_blank">Full Anime Movie List</a></li>
+       <li><a href="https://docs.google.com/document/d/1eok8Jp-R9ooUlMGbA1HA9RRzifSsjP-q/edit?usp=drive_link&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">CheckList Link Page Newly Added Anime Movie List:</a></li>
+       </ul>
+       </div>
       <div class="infoContainer">
          <div id="searchContainer">
         <input type="text" autocomplete="off" onfocus="this.value='';"
@@ -48,23 +59,15 @@
             <span>3</span>
           </div>
           <div class="name">
-            <span class="titleNoBlock">Link Page Newly Added:Anime Movies</span>
-            <span><a href="index.html"target="_blank">Newly Added:Anime Movies</a></span>
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://docs.google.com/document/d/1MHskr_RrHWGtjXsfzbfVeqdZJHSsIqf3/edit"target="_blank">Request File</a></span>
           </div>
           <div class="name">
-            <span class="titleNoBlock">Link Page Newly Added:Anime TV Shows</span>
-            <span><a href="index2.html"target="_blank">Newly Added:Anime TV Shows</a></span>
+            <span class="titleNoBlock">Top 10 Picked Anime Movies This Month</span>
+            <span><a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index4.html"target="_blank">Top 10</a></span>
           </div>
-         <div class="name">
-            <span class="titleNoBlock">Full Anime Movie List:</span>
-            <span><a href="https://mitchell-git2.github.io/Anime-full-list-movies-and-tv-shows/"target="_blank">Full Anime Movie List</a></span>
-          </div>
-	 <div class="name">
-            <span class="titleNoBlock">CheckList Link Page Newly Added Anime Movie List:</span>
-            <span><a href="https://docs.google.com/document/d/1eok8Jp-R9ooUlMGbA1HA9RRzifSsjP-q/edit?usp=drive_link&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">Check List</a></span>
-           </div>
-          </div>
-         </div>
+        </div>
+      </div>
           <div id="no-results-message" class="no-results-message"></div>
        
 
@@ -246,7 +249,18 @@
       </div>
 
 	  
-
+     <script>
+      const menuButton = document.getElementById('menu-button');
+      const sidebarNav = document.getElementById('sidebar-nav');
+    
+      menuButton.addEventListener('click', () => {
+        sidebarNav.classList.toggle('open');
+        menuButton.classList.toggle('menu-button-open');
+        
+        const infoContainer = document.querySelector('.infoContainerTextContainer');
+        infoContainer.classList.toggle('sidebar-nav-open');
+      });
+    </script>
 	  <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({

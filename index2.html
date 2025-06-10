@@ -27,6 +27,17 @@
   <body>
     <div id="overlay"></div>
     <div id="largeContainer">
+      <!-- Add the menu button -->
+       <button id="menu-button">Menu</button>
+      <!-- Add the sidebar navigation -->
+       <div id="sidebar-nav">
+       <ul>
+       <li><a href="index2.html"target="_blank">Newly Added:Anime TV Shows</a></li>
+       <li><a href="index.html"target="_blank">Newly Added:Anime Movies</a></li>
+       <li><a href="https://mitchell-git2.github.io/Anime-full-list-movies-and-tv-shows/index2.html"target="_blank">Full List Anime TV Shows</a></li>
+       <li><a href="https://docs.google.com/document/d/1nZJqfQ59A6DRymX9enXe196K-1Wit-b0/edit?usp=sharing&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">CheckList Link Page Newly Added Anime Tv Shows</a></a></li>
+       </ul>
+       </div>
       <div class="infoContainer">
          <div id="searchContainer">
         <input type="text" autocomplete="off" onfocus="this.value='';"
@@ -49,20 +60,12 @@
             <span>19</span>
           </div>
           <div class="name">
-            <span class="titleNoBlock">Link Page Newly Added:Anime TV Shows</span>
-            <span><a href="index2.html"target="_blank">Newly Added:Anime TV Shows</a></span>
+            <span class="titleNoBlock">Request Page Link:</span>
+            <span><a href="https://docs.google.com/document/d/1MHskr_RrHWGtjXsfzbfVeqdZJHSsIqf3/edit"target="_blank">Request File</a></span>
           </div>
           <div class="name">
-            <span class="titleNoBlock">Link Page Newly Added:Anime Movies</span>
-            <span><a href="index.html"target="_blank">Newly Added:Anime Movies</a></span>
-          </div>
-          <div class="name">
-            <span class="titleNoBlock">Full Anime Tv Show List:</span>
-            <span><a href="https://mitchell-git2.github.io/Anime-full-list-movies-and-tv-shows/index2.html"target="_blank">Full List Anime TV Shows</a></span>
-          </div>
-          <div class="name">
-            <span class="titleNoBlock">CheckList Link Page Newly Added Anime Tv Shows:</span>
-            <span><a href="https://docs.google.com/document/d/1nZJqfQ59A6DRymX9enXe196K-1Wit-b0/edit?usp=sharing&ouid=107722713483068785243&rtpof=true&sd=true"target="_blank">Check List</a></span>
+            <span class="titleNoBlock">Top 10 Picked Anime TV Shows This Month:</span>
+            <span><a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index3.html"target="_blank">Top 10</a></span>
           </div>
         </div>
       </div>
@@ -1417,6 +1420,18 @@ One month later, Ayanokoji, Horikita, and the students of Class D learn the trut
       <div class="footerContainer">
       </div>
     </div>
+    <script>
+      const menuButton = document.getElementById('menu-button');
+      const sidebarNav = document.getElementById('sidebar-nav');
+    
+      menuButton.addEventListener('click', () => {
+        sidebarNav.classList.toggle('open');
+        menuButton.classList.toggle('menu-button-open');
+        
+        const infoContainer = document.querySelector('.infoContainerTextContainer');
+        infoContainer.classList.toggle('sidebar-nav-open');
+      });
+    </script>
     <script type="text/javascript">
                       $(document).ready(function() {
                                 $(&quot;.fancybox&quot;).fancybox({
