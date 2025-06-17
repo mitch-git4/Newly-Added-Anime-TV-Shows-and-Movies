@@ -42,7 +42,7 @@
          <div id="searchContainer">
         <input type="text" autocomplete="off" onfocus="this.value=''; searchOnPage('');"
         onblur="if(this.value==''){this.value='Search TV Show Name'};"
-        onkeyup="searchOnPage(this.value.toLowerCase());"
+        onkeyup="searchOnPage(this.value.toLowerCase());"        
         id="search_box" value="Search TV Show Name" />
         <input type="submit" id="search_button" value="Search" />
         <div id="search_result"></div>
@@ -1461,5 +1461,9 @@ One month later, Ayanokoji, Horikita, and the students of Class D learn the trut
                         });
                 
 </script>
+ <script src="lib/sortShows.js"></script>
+ <script src="lib/year and genre filter.js" defer></script>
+       <!-- Add the no-results-message element -->
+<div id="no-results-message" style="display: none;"></div>
   </body>
 </html>
