@@ -45,9 +45,12 @@
         id="search_box" value="Search Movie Name" />
         <input type="submit" id="search_button" value="Search" />
         <div id="search_result"></div>
-	<!-- add home button -->
+        <div class="homepage-link-container">
+           <!-- add home button -->
        <a href="https://mitch-git5.github.io/homepage-one-stop-tv-delight-/index.html" class="homepage-link">Home Button</a>
          </div>
+         </div>
+         <div class="dropdown-container">
          <div id="genre-select-container">
          <label for="genre-select" class="genre-label">Search By Genre:</label>
          <select id="genre-select">
@@ -60,6 +63,13 @@
              <option value="all">All</option>
            </select>
          </div>
+         <div id="age-rating-select-container">
+         <label for="age-rating-select" class="age-rating-label">Search By Age Rating:</label>
+         <select id="age-rating-select">
+         <option value="all">All</option>
+        </select>
+        </div>
+        </div>
         <div class="infoBackTitleContainer">
           <span class="infoBackTitle">Newly Added</span>
           <hr class="subTitleSeprator" />
@@ -134,9 +144,8 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=SEqstQn0sag"target="_blank">trailer link</a></span>
           </div>
-         <div class="anilink name">
-           <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+          <div class="aniAgeRating name">
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -193,9 +202,9 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=hX-NHafvY5I"target="_blank">trailer link</a></span>
           </div>
-        <div class="anilink name">
+          <div class="aniAgeRating name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
@@ -252,17 +261,14 @@
            <span class="titleNoBlock">Trailer:</span>
             <span class="value"><a href="https://www.youtube.com/watch?v=HJx0HNj_KMk"target="_blank">trailer link</a></span>
           </div>
-         <div class="anilink name">
            <span class="titleNoBlock">Age Rating:</span>
-            <span class="value">Rated:G</span>
+            <span class="value">TV:G</span>
           </div>
          </div>
         <div class="qBar"></div>
       </div>
 
-	  
-    <script src="lib/genre list.js"></script>
-    <script src="lib/date list.js"></script>
+
     <script>
       const menuButton = document.getElementById('menu-button');
       const sidebarNav = document.getElementById('sidebar-nav');
@@ -290,8 +296,9 @@
                 
 </script>
 <script src="lib/sortMovies.js"></script>
- <script src="lib/year and genre filter.js" defer></script>
+<script src="lib/filter dropdowns.js" defer></script>
        <!-- Add the no-results-message element -->
 <div id="no-results-message" style="display: none;"></div>
+<script src="lib/Iframe movies.js"></script>
   </body>
 </html>
